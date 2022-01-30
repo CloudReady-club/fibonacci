@@ -1,0 +1,8 @@
+FROM python:3.8-alpine
+RUN mkdir /app
+ADD . /app
+WORKDIR /app
+RUN pip install flask
+RUN pip install waitress
+EXPOSE 8080
+CMD ["python", "main.py"]

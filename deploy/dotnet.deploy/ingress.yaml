@@ -1,0 +1,16 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: dotnet-fibonacci
+spec:
+  rules:
+    - host: dotnet.fibonacci.local
+      http:
+        paths:
+        - path: /
+          pathType: Prefix
+          backend:
+            service:
+              name: dotnet-fibonacci
+              port: 
+                number: 80

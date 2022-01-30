@@ -1,0 +1,16 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: dotnet-aot-fibonacci
+spec:
+  rules:
+    - host: dotnet.aot.fibonacci.local
+      http:
+        paths:
+        - path: /
+          pathType: Prefix
+          backend:
+            service:
+              name: dotnet-aot-fibonacci
+              port: 
+                number: 80

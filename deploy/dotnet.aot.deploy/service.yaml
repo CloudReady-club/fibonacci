@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: dotnet-aot-fibonacci
+spec:
+  selector:
+    app: dotnet-aot-fibonacci
+  ports:
+  - port: 80
+    protocol: TCP
+    targetPort: 8082

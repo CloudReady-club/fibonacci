@@ -1,0 +1,17 @@
+# syntax=docker/dockerfile:1
+## Build
+FROM golang:1.17.3-buster AS build
+WORKDIR /app
+
+COPY *.go ./
+RUN go mod init go-container
+RUN go build -o  /go-container -ldflags="-s -w" main.go 
+
+## Deploy
+FROM gcr.io/distroless/base-debian11
+WORKDIR /
+
+COPY --from=build /go-container /go-container
+USER nonroot:nonroot
+EXPOSE 8088
+ENTRYPOINT ["/go-container"]

@@ -1,0 +1,5 @@
+/Users/youness/Documents/work/microservice-optimisation/dotnet-api/dotnet-fibonacci-webapp/out2/out/web.config
+/Users/youness/Documents/work/microservice-optimisation/dotnet-api/dotnet-fibonacci-webapp/out2/out/dotnet-fibonnaci-webapp.deps.json
+/Users/youness/Documents/work/microservice-optimisation/dotnet-api/dotnet-fibonacci-webapp/out2/out/dotnet-fibonnaci-webapp.runtimeconfig.json
+/Users/youness/Documents/work/microservice-optimisation/dotnet-api/dotnet-fibonacci-webapp/out2/dotnet-fibonnaci-webapp.pdb
+/Users/youness/Documents/work/microservice-optimisation/dotnet-api/dotnet-fibonacci-webapp/out2/dotnet-fibonnaci-webapp
