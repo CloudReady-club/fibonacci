@@ -1,8 +1,0 @@
-/Users/youness/Documents/work/microservice-optimisation/dotnet-api/dotnet-fibonacci-webapp/out/dotnet-fibonnaci-webapp
-/Users/youness/Documents/work/microservice-optimisation/dotnet-api/dotnet-fibonacci-webapp/out/dotnet-fibonnaci-webapp.dll
-/Users/youness/Documents/work/microservice-optimisation/dotnet-api/dotnet-fibonacci-webapp/out/dotnet-fibonnaci-webapp.deps.json
-/Users/youness/Documents/work/microservice-optimisation/dotnet-api/dotnet-fibonacci-webapp/out/dotnet-fibonnaci-webapp.runtimeconfig.json
-/Users/youness/Documents/work/microservice-optimisation/dotnet-api/dotnet-fibonacci-webapp/out/dotnet-fibonnaci-webapp.pdb
-/Users/youness/Documents/work/microservice-optimisation/dotnet-api/dotnet-fibonacci-webapp/out/Microsoft.AspNetCore.Server.Kestrel.Https.dll
-/Users/youness/Documents/work/microservice-optimisation/dotnet-api/dotnet-fibonacci-webapp/out/Microsoft.AspNetCore.Server.Kestrel.Transport.Abstractions.dll
-/Users/youness/Documents/work/microservice-optimisation/dotnet-api/dotnet-fibonacci-webapp/out/runtimes/win/lib/net6.0/System.Diagnostics.EventLog.Messages.dll
