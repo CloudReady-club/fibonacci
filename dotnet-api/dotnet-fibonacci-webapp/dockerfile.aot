@@ -2,11 +2,9 @@
 FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build-env
 WORKDIR /app
 
-# Copy csproj and restore as distinct layers
 COPY *.csproj ./
 RUN dotnet restore
 
-# Copy everything else and build
 COPY . .
 RUN dotnet publish -c Release -r alpine-x64 \
         -p:PublishSingleFile=true  \
@@ -14,7 +12,7 @@ RUN dotnet publish -c Release -r alpine-x64 \
         --self-contained true \
         -o out-self
 
-
+# Build runtime image
 FROM amd64/alpine:3.14
 
 RUN apk add --no-cache \

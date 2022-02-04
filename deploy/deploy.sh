@@ -39,8 +39,7 @@ build_and_deploy(){
     if [ $RUN_PACKAGING -eq "1" ];then 
         echo "configuring k8s manifest files"
         yq eval ".spec.template.spec.containers[0].image = \"$IMAGE_NAME\"" ${TEMPLATE_PREFIX}.deploy.source.yaml > ./${TEMPLATE_PREFIX}.deploy/deploy.yaml
-    fi   
-    
+    fi 
 
     if [ $RUND_DEPLOY -eq "1" ];then 
         
@@ -53,8 +52,6 @@ build_and_deploy(){
         echo "Deploy worloads"
         kubectl -n $K8S_NAMESAPCE apply -f ${TEMPLATE_PREFIX}.deploy/.
     fi
-
-
 
 }
 echo "#########################Deploying dotnet worloads ###########################"
